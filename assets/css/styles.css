@@ -10,7 +10,7 @@
 }
 
 body {
-	font-family: brandon-grotesque, sans-serif;
+	font-family: 'brandon-grotesque', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -20,43 +20,64 @@ body {
 /* Typography styles */
 
 .display-1 {
-	font-family: 'freight-display-pro', serif;
-	font-weight: 500;
+	font-family: 'ivyora-display', serif;
+	font-weight: 400;
 	vertical-align: middle;
 }
 
 h1 {
-	font-family: 'freight-display-pro', serif;
+	font-family: 'ivyora-display', serif;
 	font-weight: 400;
 	vertical-align: middle;
 }
 
 h2 {
 	font-family: 'brandon-grotesque', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	vertical-align: middle;
 }
+
 h3 {
 	font-family: 'brandon-grotesque', sans-serif;
 	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #2A4936;
 	vertical-align: middle;
 	padding: 40px;
 	padding-top: 20px;
 }
 
 blockquote {
-	font-size: 1.5em;
-	font-family: 'freight-display-pro', serif;
-	font-weight: 300;
+	font-size: 1.25em;
+	font-family: 'ivyora-display', serif;
+	font-weight: 400;
 	font-style: normal;
 	color: #282828;
 	padding-right: 40px;
-	float: left;
-	
+	float: left;	
+}
+
+.description-heading {
+	font-family: 'ivyora-display', serif;
+	font-style: normal;
+	font-weight: 500 !important;
+  	font-size: 1.25em !important;
+  	color: #FCFBF4;
+}
+
+.description-body {
+	font-family: 'brandon-grotesque', sans-serif;
+	font-style: normal;
+	font-weight: 700 !important;
+	font-size: 0.75em !important;
+	text-transform: uppercase;
+	color: #CDBF2C;
 }
 
 .text-lt {
-	color: #FAF9F6;
+	color: #FCFBF4;
 }
 
 /* Header css */
@@ -70,14 +91,15 @@ blockquote {
 .footer-basic {
   padding: 40px 0;
   background-color: #282828;
-  color: #f2f2f2;
+  color: #FCFBF4;
 }
 
 .footer-basic ul {
   padding: 0;
   list-style: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
+	text-transform: uppercase;
   line-height: 1.6;
   margin-bottom: 0;
 }
@@ -111,19 +133,22 @@ blockquote {
   border-radius: 50%;
   border: 1px solid #ccc;
   margin: 0 8px;
-  color: inherit;
+  color: #FCFBF4;
   opacity: 0.75;
 }
 
 .footer-basic .social > a:hover {
-  opacity: 0.9;
+  color: #CDBF2C;
 }
 
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
+	font-family: 'ivyora-display', serif;
+	font-style: normal;
+	font-weight: 500;
   font-size: 13px;
-  color: #aaa;
+  color: #FCFBF4;
   margin-bottom: 0;
 }
 
@@ -255,7 +280,7 @@ img.p-bottom {
 }
 
 .bg-light {
-	background-color: #FAF9F6 !important;
+	background-color: #FCFBF4 !important;
 }
 
 .nav-link:hover {
@@ -278,10 +303,13 @@ img.p-bottom {
 	color: #CDBF2C !important;
 }
 
+/* button customization */
 .btn-primary {
+	font-size: 0.75em;
+	font-weight: 700;
 	color: #FAF9F6;
-	background-color: #19304D;
-	border-color: #19304D;
+	background-color: #2A4936;
+	border-color: #2A4936;
 }
 .btn-primary:hover {
 	background-color: #CDBF2C !important;
@@ -289,10 +317,12 @@ img.p-bottom {
 }
 
 .btn-page-prev {
-	color: #19304D;
+	color: #2A4936;
 	background-color: #FAF9F6;
 	border-color: #FAF9F6;
-	font: normal;
+	font-family: 'ivyora-display', serif;
+	font-style: normal;
+	font-weight: 500;
 	margin-left: 40px;
 	float: left;
 	display:inline-block;
@@ -305,7 +335,7 @@ img.p-bottom {
 	height:15px;
 	display:inline-block;
 	background-size:contain;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z' transform='translate(-11.251 -6.194)' fill='%2319304d'/%3E%3C/svg%3E%0A");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z' transform='translate(-11.251 -6.194)' fill='%232A4936'/%3E%3C/svg%3E%0A");
 	background-repeat: no-repeat;
 	position: absolute;
 	left:0px;
@@ -323,7 +353,7 @@ img.p-bottom {
 	height:15px;
 	display:inline-block;
 	background-size:contain;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z' transform='translate(-11.251 -6.194)' fill='%2319304d'/%3E%3C/svg%3E%0A");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z' transform='translate(-11.251 -6.194)' fill='%232A4936'/%3E%3C/svg%3E%0A");
 	background-repeat: no-repeat;
 	position: absolute;
 	right:0px;
@@ -343,10 +373,12 @@ img.p-bottom {
 }
 
 .btn-page-next {
-	color: #19304D;
+	color: #2A4936;
 	background-color: #FAF9F6;
 	border-color: #FAF9F6;
-	font: normal;
+	font-family: 'ivyora-display', serif;
+	font-style: normal;
+	font-weight: 500;
 	margin-right: 40px;
 	float: right;
 	display: inline-block;
@@ -360,17 +392,26 @@ img.p-bottom {
 	content: '';
 	width:15px;
 	height:30px;
-	margin-left: 10px;
-	float: left;
 	display:inline-block;
 	background-size:contain;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z' transform='translate(-11.251 -6.194)' fill='%2319304d'/%3E%3C/svg%3E%0A");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z' transform='translate(-11.251 -6.194)' fill='%232A4936'/%3E%3C/svg%3E%0A");
 	background-repeat: no-repeat;
+	position: absolute;
+	left:50px;
 } 
 
 .carousel-control-next-icon {
-	color: #19304D;
-}
+	content: '';
+	width:15px;
+	height:30px;
+	display:inline-block;
+	background-size:contain;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.503' height='23.619' viewBox='0 0 13.503 23.619'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z' transform='translate(-11.251 -6.194)' fill='%232A4936'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	position: absolute;
+	right:50px;
+	transform: rotate(180deg);
+} 
 
 
 
